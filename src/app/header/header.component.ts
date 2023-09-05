@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   nombre: string = "fake name";
   titulo: string = "fake phD";
   objetivo: string = "fake goal";
-  foto: string = "fake photo";
+  foto: string = "https://....";
   email: string = "fake email";
   celular: string = "fake cel";
   ubicacion: string = "fake city";
@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit {
       this.nombre = data.name;
       this.titulo = data.titulo;
       this.objetivo = data.objetivo;
-      this.foto = data.photo;
+      this.foto = data.foto;
       this.email = data.email;
       this.celular = data.cel;
       this.ubicacion = data.ubicacion;

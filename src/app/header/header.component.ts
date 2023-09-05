@@ -35,8 +35,6 @@ export class HeaderComponent implements OnInit {
       this.ubicacion = data.ubicacion;
       this.redsocial = data.social.face;
     })
-    {
-
-    }
+   
   }
 }

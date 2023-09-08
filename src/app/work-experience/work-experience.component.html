@@ -1,1 +1,21 @@
-<p>work-experience works!</p>
+<div class="work-experience">
+    <h2>Experiencia Laboral</h2>
+    <div *ngIf="data && data.length > 0">
+      <div *ngFor="let experiencia of data" class="experiencia-item">
+        <h3>{{ experiencia.puesto }}</h3>
+        <p>{{ experiencia.empresa }}</p>
+        <p>Fecha de inicio: {{ experiencia.fecha_ini }}</p>
+        <p>Fecha de fin: {{ experiencia.fecha_fin }}</p>
+        <p>Ciudad: {{ experiencia.ciudad }}</p>
+        <p>País: {{ experiencia.pais }}</p>
+        <h4>Logros:</h4>
+        <ul>
+          <li *ngFor="let logro of experiencia.logros">{{ logro }}</li>
+        </ul>
+      </div>
+    </div>
+    <div *ngIf="!data || data.length === 0">
+      <p>No se encontraron datos de experiencia laboral.</p>
+    </div>
+  </div>
+  

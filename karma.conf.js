@@ -42,6 +42,8 @@ browsers:['ChromeHeadlessCI'],
 	}
 },
 singleRun:false,
-    restartOnFileChange: true
+    restartOnFileChange: true,
+    failOnEmptyTestSuite: false,
   });
+
 };

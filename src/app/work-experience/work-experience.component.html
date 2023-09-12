@@ -4,10 +4,10 @@
       <div *ngFor="let experiencia of data" class="experiencia-item">
         <h3>{{ experiencia.puesto }}</h3>
         <p>{{ experiencia.empresa }}</p>
-        <p>Fecha de inicio: {{ experiencia.fecha_ini }}</p>
-        <p>Fecha de fin: {{ experiencia.fecha_fin }}</p>
-        <p>Ciudad: {{ experiencia.ciudad }}</p>
-        <p>País: {{ experiencia.pais }}</p>
+        <p><strong>Fecha de inicio:</strong>  {{ experiencia.fecha_ini }}</p>
+        <p><strong>Fecha de fin:</strong>  {{ experiencia.fecha_fin }}</p>
+        <p><strong>Ciudad:</strong> {{ experiencia.ciudad }}</p>
+        <p><strong>País:</strong> {{ experiencia.pais }}</p>
         <h4>Logros:</h4>
         <ul>
           <li *ngFor="let logro of experiencia.logros">{{ logro }}</li>

@@ -24,7 +24,7 @@ export class WorkExperienceServiceService {
       catchError(this.handleError)
     )
   }
-  
+
   handleError(error :any){
     let errorMessage = '';
     if(error.error instanceof ErrorEvent){

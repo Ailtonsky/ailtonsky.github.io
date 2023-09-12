@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SkillsCompetenciesComponent } from './skills-competencies/skills-competencies.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SkillsCompetenciesComponent } from './skills-competencies/skills-compet
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

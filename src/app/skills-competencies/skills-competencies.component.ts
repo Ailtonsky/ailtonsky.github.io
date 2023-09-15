@@ -7,17 +7,17 @@ import { SkillsCompetenciesService } from '../services/skills-competencies.servi
   styleUrls: ['./skills-competencies.component.css']
 })
 export class SkillsCompetenciesComponent implements OnInit {
-  constructor(private skillsCompetencies: SkillsCompetenciesService){
+  constructor(private skillsCompetenciesService: SkillsCompetenciesService){
   }
 
-  data: any[] = [];
+  skills: any[] = [];
 
   ngOnInit(): void {
-    this.skillsCompetencies.getSkillsCompetencies()
+    this.skillsCompetenciesService.getSkillsCompetencies()
     .subscribe( (data: any) => {
       console.log(data);
       //alert(JSON.stringify(data));
-      this.data = data.work_experience;
+      this.skills = data.skills_competencies;
     })
   }
 }

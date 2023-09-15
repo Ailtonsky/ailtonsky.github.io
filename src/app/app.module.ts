@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SkillsCompetenciesComponent } from './skills-competencies/skills-competencies.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AchievementsCertificatesComponent } from './achievements-certificates/achievements-certificates.component';
+import { InterestsComponent } from './interests/interests.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AchievementsCertificatesComponent } from './achievements-certificates/a
     HeaderComponent,
     WorkExperienceComponent,
     SkillsCompetenciesComponent,
-    AchievementsCertificatesComponent
+    AchievementsCertificatesComponent,
+    InterestsComponent
   ],
   imports: [
     BrowserModule,

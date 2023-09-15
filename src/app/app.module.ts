@@ -8,13 +8,15 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { HttpClientModule } from '@angular/common/http';
 import { SkillsCompetenciesComponent } from './skills-competencies/skills-competencies.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AchievementsCertificatesComponent } from './achievements-certificates/achievements-certificates.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     WorkExperienceComponent,
-    SkillsCompetenciesComponent
+    SkillsCompetenciesComponent,
+    AchievementsCertificatesComponent
   ],
   imports: [
     BrowserModule,

@@ -8,7 +8,7 @@ import {BehaviorSubject} from 'rxjs/';
 })
 export class AchievementsCertificatesService {
 
-  apiURL = "http://localhost:8080/achievements-certificates"
+  apiURL = "https://api2023-service-ailtonsky.cloud.okteto.net/achievements-certificates"
   constructor(private http: HttpClient) {}
 
   httpOptions = {

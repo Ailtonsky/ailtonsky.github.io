@@ -9,7 +9,7 @@ import {BehaviorSubject} from 'rxjs/';
 })
 export class InterestsService {
 
-  apiURL = "http://localhost:8080/interest"
+  apiURL = "https://api2023-service-ailtonsky.cloud.okteto.net/interest"
   constructor(private http: HttpClient) {}
 
   httpOptions = {
